@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "test",
+    "version": "1.0",
+    "description": "just a discription",
+    "icons":{
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "browser_action":{
+        "default_icon": "icon128.png",
+        "default_popup": "popup.html"
+    },
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "js.js" ],
+      "css": [ "css.css" ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "permissions": [ "tabs", "storage" ],
+  "web_accessible_resources": [
+    "pattern0.png"]
+}
