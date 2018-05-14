@@ -5,17 +5,16 @@
     "content_scripts": [
         {
           "matches": ["http://*/*", "https://*/*"],
-          "js": ["myscript.js"]
+          "js": ["jquery.js","myscript.js"],
+          "css":["style.css"]
         }
       ],
       "chrome_url_overrides":{
           "newtab" : "newtab.html"
       },
-      "background":{
-          "scripts": ["background.js"]
-      },
-    "browser_action": {
-        "default_popup": "recChec.html"
-    },
+      "web_accessible_resources":[
+        "toolbar.html",
+        "style.css"
+      ],
     "manifest_version": 2
   }
