@@ -1,5 +1,20 @@
 console.log("chorome extention");
-let paragraphs = document.getElementsByTagName('br')
-for (e in paragraphs) {
-console.log(e.style['background-color']="#E8ADAA");
+
+
+chrome.runtime.onMessage.addListener(gotMessage);
+var flag = 0;
+function gotMessage(message, sender, sendResponse) {
+    if (message.txt === "hi") {
+        if (flag === 0){
+            flag = 1;
+        }else{
+            flag = 0;
+        }
+    }
+    if (flag === 1) {
+        let paragraphs = document.getElementsByTagName("p")
+        for (e of paragraphs) {
+            e.style['background-color'] = '#FF00FF';
+        }
+    }
 }
