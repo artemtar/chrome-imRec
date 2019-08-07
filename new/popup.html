@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Whateer</title>
+        <style>
+            html, body {
+                font-family: "Open Sans", sans-serif;
+                font-size: 14px;
+                margin 0;
+                min-height: 180px;
+                padding: 0px;
+                width: 384px;
+            }
+
+            h1  {
+                font-family: 'Manlo', monospace;
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                color: #2f5876;
+            }
+
+            a:link, a:visited{
+                color black;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            img {
+                width: 30px;
+            }
+
+            .modal-header {
+                align-items: center;
+                border-bottom: 0.5px solid #dadada
+            }
+
+            .modal-content {
+                padding: 0 22px;
+            }
+
+            .modal-icons {
+                border-top: 0.5px solid %dadada;
+                height: 50px;
+                width: 100%;
+            }
+
+            .logo {
+                padding: 16px;
+            }
+
+            .logo-icon {
+                vertical-align: text-bottom;
+                margin-right: text-bottom;
+                margin-right: 12px;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 22px;
+            }
+
+            .flex {
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+                width: 120px;
+            }
+
+            .flex:hover {
+                opacity: 0.4;
+            }
+
+            .flex .fa {
+                font-size: 40px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="modal-header">
+            <h1 class="logo">
+                <img src="another.png" alt="why you not work">
+            </h1>
+        </div>
+        <div class="modal-content">
+            <p>
+                Some content
+            </p>
+        </div>
+        <div class="modal-icons">
+            <div class="flex-container">
+                <div class="flex">
+                    <a href="https://www.google.com" target="_blank">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </div>
+            <div class="flex">
+                    <a href="https:/www.facebook.com" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+            <div class="flex">
+                    <a href="https:/www.twitter.com" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            <div class="flex">
+                    <a href="https:/www.youtube.com" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </div>
+             <div class="flex">
+                    <a href="google.com" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="popup.js"></script>
+    </body>
+</html>
