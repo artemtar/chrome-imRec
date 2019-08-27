@@ -1,25 +1,46 @@
 {
     "manifest_version": 2,
-    "name": "Text check",
+    "name": "FearBlocker",
     "version": "0.1",
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html"
     },
+    "web_accessible_resources": [
+        "javascript-lemmatizer/bower_components/underscore/*.json",
+        "javascript-lemmatizer/dict/*.json"
+    ],
     "content_scripts": [
         {
             "matches": [
                 "<all_urls>"
             ],
             "js": [
-                    "jquery-3.4.1.min.js",
-                    "compromise.min.js",
-                    "natural.js",
-                    "removeStopWords.js",
-                    "js.js"
-                ],
-
-            "css": ["css/style.css"]
+                "jquery-3.4.1.min.js",
+                "compromise.min.js",
+                "natural.js",
+                "removeStopWords.js",
+                "javascript-lemmatizer/bower_components/underscore/underscore.js",
+                "javascript-lemmatizer/js/lemmatizer.js",
+                "PorterStemmer2.js",
+                "js.js"
+            ],
+            "css": [
+                "css/style.css"
+            ]
         }
+    ],
+    "background": {
+        "scripts": [
+            "jquery-3.4.1.min.js",
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs",
+        "contextMenus"
     ]
 }
