@@ -138,7 +138,17 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message == "unblurAll") {
     imageList.forEach(function (element) {
+      $(element).removeClass("blur");
       $(element).addClass("noblur");
+    });
+  }
+});
+
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message == "blurAll") {
+    imageList.forEach(function (element) {
+      $(element).removeClass("noblur");
+      $(element).addClass("blur");
     });
   }
 });

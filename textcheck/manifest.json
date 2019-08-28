@@ -16,14 +16,14 @@
                 "<all_urls>"
             ],
             "js": [
-                "jquery-3.4.1.min.js",
-                "compromise.min.js",
-                "natural.js",
-                "removeStopWords.js",
-                "javascript-lemmatizer/bower_components/underscore/underscore.js",
-                "javascript-lemmatizer/js/lemmatizer.js",
-                "PorterStemmer2.js",
-                "js.js"
+                "js/jquery-3.4.1.min.js",
+                "js/compromise.min.js",
+                "js/natural.js",
+                "js/removeStopWords.js",
+                "js/javascript-lemmatizer/bower_components/underscore/underscore.js",
+                "js/javascript-lemmatizer/js/lemmatizer.js",
+                "js/PorterStemmer2.js",
+                "js/js.js"
             ],
             "css": [
                 "css/style.css"
@@ -32,8 +32,8 @@
     ],
     "background": {
         "scripts": [
-            "jquery-3.4.1.min.js",
-            "background.js"
+            "js/jquery-3.4.1.min.js",
+            "js/background.js"
         ],
         "persistent": true
     },

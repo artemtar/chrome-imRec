@@ -8,3 +8,8 @@ img.noblur {
     -webkit-filter: none;
     -ms-filter: none;
 }
+img.blur {
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+    -ms-filter: blur(12px);
+}
